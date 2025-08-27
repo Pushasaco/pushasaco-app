@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
-# Minimal wrapper shim. If you prefer, run with Android Studio or install a gradle wrapper locally.
+# Minimal wrapper shim. Use Android Studio or a local Gradle 8.7+ if this shim isn't enough.
 ./gradlew.bat "$@" 2>/dev/null || ( echo "Use Android Studio or install Gradle 8.7+ locally."; exit 0 )

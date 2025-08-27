@@ -10,7 +10,7 @@ export const onMessageCreated = onDocumentCreated("rooms/{roomId}/messages/{msgI
   const text: string | undefined = data?.text;
   if (!text) return;
 
-  // Example: naive 'summary' field (uppercase) for demo
+  // Example summary (stub): uppercase first 120 chars
   const summary = String(text).slice(0, 120).toUpperCase();
 
   await admin.firestore().doc(`rooms/${event.params.roomId}`)

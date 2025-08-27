@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
         NavHost(navController = nav, startDestination = "rooms") {
           composable("rooms") { RoomsScreen(onOpenRoom = { id -> nav.navigate("messages/$id") }, onOpenWallet = { nav.navigate("wallet") }) }
           composable("messages/{roomId}") { backStack ->
-            val rid = backStack.arguments?.getString("roomId") ?: "demo"
+            val rid = backStack.arguments?.getString("roomId") ?: "general"
             MessagesScreen(roomId = rid, onBack = { nav.popBackStack() })
           }
           composable("wallet") { WalletScreen(onBack = { nav.popBackStack() }) }
@@ -32,8 +32,5 @@ class MainActivity : ComponentActivity() {
   }
 }
 
-@Preview
-@Composable
-fun PreviewApp() {
-  MaterialTheme { }
-}
+@Preview @Composable
+fun PreviewApp() { MaterialTheme { } }

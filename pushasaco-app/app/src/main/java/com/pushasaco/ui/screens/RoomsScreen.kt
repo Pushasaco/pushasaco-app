@@ -12,9 +12,7 @@ fun RoomsScreen(onOpenRoom: (String) -> Unit, onOpenWallet: () -> Unit) {
     topBar = {
       TopAppBar(
         title = { Text("Pushasaco") },
-        actions = {
-          TextButton(onClick = onOpenWallet) { Text("Wallet") }
-        }
+        actions = { TextButton(onClick = onOpenWallet) { Text("Wallet") } }
       )
     }
   ) { pad ->

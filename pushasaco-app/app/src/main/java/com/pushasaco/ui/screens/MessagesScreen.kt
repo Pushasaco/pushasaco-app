@@ -28,7 +28,7 @@ fun MessagesScreen(roomId: String, onBack: () -> Unit) {
     topBar = {
       TopAppBar(
         title = { Text("#$roomId") },
-        navigationIcon = { IconButton(onClick = onBack) { Icon(Icons.Default.ArrowBack, contentDescription = "Back") } }
+        navigationIcon = { IconButton(onClick = onBack) { Icon(Icons.Filled.ArrowBack, contentDescription = "Back") } }
       )
     },
     bottomBar = {

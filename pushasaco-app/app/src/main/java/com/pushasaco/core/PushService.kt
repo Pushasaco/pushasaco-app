@@ -5,7 +5,7 @@ import com.google.firebase.messaging.RemoteMessage
 
 class PushService : FirebaseMessagingService() {
   override fun onNewToken(token: String) {
-    // TODO: Save FCM token to Firestore under /users/{uid}/devices
+    // TODO: Save FCM token under /users/{uid}/devices
   }
   override fun onMessageReceived(message: RemoteMessage) {
     // TODO: Show local notification or in-app banner

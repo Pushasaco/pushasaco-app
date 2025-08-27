@@ -4,14 +4,12 @@
     {
       "label": "Assemble Debug",
       "type": "shell",
-      "command": "./gradlew :app:assembleDebug",
-      "problemMatcher": []
+      "command": "./gradlew :app:assembleDebug"
     },
     {
       "label": "Install Debug",
       "type": "shell",
-      "command": "./gradlew :app:installDebug",
-      "problemMatcher": []
+      "command": "./gradlew :app:installDebug"
     }
   ]
 }

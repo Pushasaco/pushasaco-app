@@ -5,8 +5,6 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
 
 @Composable
 fun WalletScreen(onBack: () -> Unit) {
@@ -14,7 +12,7 @@ fun WalletScreen(onBack: () -> Unit) {
     topBar = {
       TopAppBar(
         title = { Text("Wallet") },
-        navigationIcon = { IconButton(onClick = onBack) { Icon(Icons.Default.ArrowBack, contentDescription = "Back") } }
+        navigationIcon = { IconButton(onClick = onBack) { Text("<") } }
       )
     }
   ) { pad ->
