@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{db}/documents {
+    function isAuthed() { return request.auth != null; }
+
+    match /users/{uid} {
+      allow read: if isAuthed();
+      allow write: if isAuthed() && request.auth.uid == uid;
+    }
+
+    match /rooms/{roomId} {
+      allow read, write: if isAuthed();
+    }
+
+    match /rooms/{roomId}/messages/{msgId} {
+      allow create: if isAuthed() && request.resource.data.senderId == request.auth.uid;
+      allow read: if isAuthed();
+    }
+  }
+}

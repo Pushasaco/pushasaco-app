@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "vscjava.vscode-gradle",
+    "ms-azuretools.vscode-docker",
+    "ms-vscode.vscode-typescript-next",
+    "redhat.java",
+    "esbenp.prettier-vscode",
+    "mhutchie.git-graph",
+    "firebase.firebase-vscode"
+  ]
+}

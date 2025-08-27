@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">Pushasaco</string>
+  <string name="rooms">Salas</string>
+  <string name="messages">Mensajes</string>
+  <string name="wallet">Billetera</string>
+  <string name="send">Enviar</string>
+  <string name="type_message">Escribe un mensaje…</string>
+</resources>
