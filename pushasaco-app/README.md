@@ -1,3 +1,5 @@
+![pushasaco_more_fluid_progressive_slow (1)](https://github.com/user-attachments/assets/6b53d697-bd8b-41ce-ae95-660c7854d0b4)
+
 # Pushasaco App — Android (Kotlin + Compose) + Firebase/GCP + AI (2025)
 
 A modern starter for a **multilingual chat + crypto** Android app using **Jetpack Compose**, **Firebase** (Auth, Firestore, Storage, FCM, Remote Config, App Check), and optional **GCP** backends (Cloud Functions 2nd gen / Cloud Run). Works great in **VS Code** (Android SDK) or Android Studio.
